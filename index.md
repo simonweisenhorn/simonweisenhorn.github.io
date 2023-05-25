@@ -11,3 +11,6 @@ knitr::include_graphics("js/highlightjs/Simon_Weisenhorn_Headshot.jpeg")
   * Running
   * Backpacking
   * Fishing
+
+### Email me to learn more!  
+Email: spweisen@ncsu.edu
