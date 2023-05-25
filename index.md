@@ -13,5 +13,11 @@ Hello! I am a *current* graduate student at **NCSU**, where I am finishing up my
   * Backpacking
   * Fishing
 
+### My three favorite movies:  
+  
+  1. The Matrix 
+  2. 10 Cloverfield Lane
+  3. Hot Rod
+
 ### Email me to learn more!  
 Email: spweisen@ncsu.edu
