@@ -4,9 +4,7 @@
 
 Hello! I am a current graduate student at NCSU, where I am finishing up my master's in statistics. This blog is an assignment for my ST 558 class and is where I will showcase what I have learned in data science!
 
-```{r dplyr image, out.width = "70px", fig.align='center', echo = FALSE}
 knitr::include_graphics("js/highlightjs/Simon_Weisenhorn_Headshot.jpeg")
-```
 
 ### Here are a few things that I like to do:  
   
