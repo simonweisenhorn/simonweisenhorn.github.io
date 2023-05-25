@@ -1,5 +1,5 @@
 # Welcome to my home page!  
-## My name is Simon Weisenhorn!
 
+## Author: Simon Weisenhorn
 
-This is for my ST 558 Class
+Hello! I am a current graduate student at NCSU, where I am finishing up my master's in statistics. This blog is an assignment for my ST 558 class and is where I will showcase what I have learned in data science!
