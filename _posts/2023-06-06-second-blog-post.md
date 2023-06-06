@@ -10,11 +10,11 @@ Typescript, and very minimal amounts of Python. My opinion on R vs some
 of the other programming languages is that it is very simple and easy to
 use. I find it to be very intuitive and straightforward, while also
 being advanced enough to conduct interesting analyses and create
-fascinating outputs. This is in contrast to SAS (2023my other most used
+fascinating outputs. This is in contrast to SAS (my other most used
 programming language) which is usually not intuitive and harder to
 complete tasks that I am interested in achieving. SAS is also far less
-popular, which leads to a lower amount of support online. The
-functionality that I like most about R is how it is object oriented,
+popular, which leads to a lower amount of support online.  
+The functionality that I like most about R is how it is object oriented,
 which makes working on projects far easier to comprehend because of how
 R stores information. This is much easier than dealing with how SAS
 treats information in an action oriented format. However, I do miss the
@@ -23,14 +23,15 @@ procedure made it very easy to learn everything about how to achieve a
 desired output in a uniform way. R certainly has a great community to
 learn from, but they aren’t always super clear and sometimes show ways
 of doing things that are completely different from someone else’s
-approach. Personally, I do not find R to be a difficult language to
-learn. I first learned it in my undergraduate courses and I think the
-object oriented format makes it one of the less complicated languages.
-It can certainly be frustrating to wrap your head around how a computer
-processes information and applies function to different variables, but
-once I picked that up, things between myself and R have gone fairly
-smoothly. I am super fortunate to know R at the level that I do now and
-I look forward to learning more this summer!
+approach.  
+Personally, I do not find R to be a difficult language to learn. I first
+learned it in my undergraduate courses and I think the object oriented
+format makes it one of the less complicated languages. It can certainly
+be frustrating to wrap your head around how a computer processes
+information and applies function to different variables, but once I
+picked that up, things between myself and R have gone fairly smoothly. I
+am super fortunate to know R at the level that I do now and I look
+forward to learning more this summer!
 
 ## Example R Markdown Output
 
