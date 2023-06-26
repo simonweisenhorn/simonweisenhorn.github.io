@@ -1,0 +1,55 @@
+---
+title: "Project 1 Reflection"
+author: "Simon Weisenhorn"
+date: "2023-06-25"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+This blog is to reflect on my efforts to in completing the first project in 
+ST 558. The project was very demanding and lead me to create over ten functions
+that queried all of the data from an API (Application Programming Interface). The 
+API I selected was based on food recipes which lead me to create several functions
+that queried recipes based on different criteria such as cuisines, diets, or 
+intolerances. After creating these functions, I created several more to allow
+the user to query information on the recipes such as the nutritional facts 
+per serving and the tastes for each one. The final subset of functions I 
+created were designed to allow the user to query the equipment required,
+the ingredients list, and the steps for making the dish. Therefore,
+each group of function were designed to help the user smoothly move through
+the process of selecting a recipe and making it.  
+  
+Following my creation of the functions, I worked on making visualizations 
+that worked together to create a story. I start with analyzing the relationships
+between nutritional elements of American cuisines, which then led me to analyze
+the relationships between American cuisines and other cuisines. I found a few
+surprising results from this analysis such as finding that the sample of
+American cuisines were less salty and less calorically dense then some of the 
+other cuisine counterparts. Following the study of American cuisine, I moved on
+to analyzing the caloric content of main course meals vs desserts and found them
+to be very similar which was shocking because people could possibly be consuming
+twice the amount of calories with something like dinner and dessert. This caused
+me to move to analyzing the diets to combat this kind of eating behavior where I 
+found interesting relationships between the ratios of certain macro nutrients
+among different diet plans who all claim to be optimal. Finally, I finished
+my visualizations with an exploration of how recipes with gluten taste
+compared to recipes without gluten taste because many people claim gluten free
+things to be bland. This lead me to find that recipes with gluten seemed to be
+slightly sweeter than recipes without gluten but only by a hair.   
+  
+Overall, I learned a ton from this project on how to access API's efficiently,
+while simultaneously wiping off the rust for my ggplot skills. I think the most 
+difficult part of the logic and programming for me was parsing through the 
+API data once I got it and figuring out how the querying links work with the 
+API key. The biggest thing that I would do differently in approaching a similar 
+project in the future would be to plan everything out before I start coding.
+When I started this project, I wanted to jump straight in and start coding, but
+that ended up leading me to create functions or visualizations that did not
+make the final presentation and wasted lots of time. Next time I will make
+sure to plan more effectively so that my time is used efficiently and everything
+is cohesive.
+
+Here is the link to my github pages repo: [LINK](https://simonweisenhorn.github.io/project1/)  
+Here is the link to my regular repo: [LINK](https://github.com/simonweisenhorn/project1/tree/main)  
