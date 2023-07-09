@@ -3,28 +3,28 @@ Project 2 Reflection
 Simon Weisenhorn
 2023-07-09
 
-This blog is to reflect on my efforts to in completing the second
-project in ST 558. I found this project to be less demanding than the
-first one, but was certainly still challenging overall. For my portion
-of the work, I wrote the entire introduction to inform the readers of
-the necessary background information and to prepare them for what to
-expect throughout the report. I also wrote a very helpful function that
-aimed to take in a character string of a given data channel and then
-subset the data based on the character string, as well as remove the
-opposing data channels and non-predictive variables from the resulting
-dataframe. This function was helpful because it assisted in the
-automation process of the entire project because I was able to feed it a
-new channel string for each iteration of the loop that rendered all of
-the reports. Following the creation of this function, I worked hard to
-create interesting and meaningful summaries through utilizing colors and
-different graphs, which were accompanied by generic descriptions of what
-the reader could expect to understand from the graph based on what the
-data looked like for a particular channel. Finally, for my final portion
-of the project, I built a linear model that included interactions
-between all of the variables, and a boosted tree model. Both of these
-models used preprocessed data and cross-validation to ensure a higher
-accuracy for predicting the test set, and the boosted tree model was
-accompanied by a brief explanation into the model itself.
+This blog is to reflect on my efforts in completing the second project
+in ST 558. I found this project to be less demanding than the first one,
+but was certainly still challenging overall. For my portion of the work,
+I wrote the entire introduction to inform the readers of the necessary
+background information and to prepare them for what to expect throughout
+the report. I also wrote a very helpful function that aimed to take in a
+character string of a given data channel and then subset the data based
+on the character string, as well as remove the opposing data channels
+and non-predictive variables from the resulting dataframe. This function
+was helpful because it assisted in the automation process of the entire
+project because I was able to feed it a new channel string for each
+iteration of the loop that rendered all of the reports. Following the
+creation of this function, I worked hard to create interesting and
+meaningful summaries through utilizing colors and different graphs,
+which were accompanied by generic descriptions of what the reader could
+expect to understand from the graph based on what the data looked like
+for a particular channel. Finally, for my final portion of the project,
+I built a linear model that included interactions between all of the
+variables, and a boosted tree model. Both of these models used
+preprocessed data and cross-validation to ensure a higher accuracy for
+predicting the test set, and the boosted tree model was accompanied by a
+brief explanation into the model itself.
 
 Overall, I learned a lot from this project on how helpful automating an
 .Rmd file can be, while continuing to challenge my problem solving and
