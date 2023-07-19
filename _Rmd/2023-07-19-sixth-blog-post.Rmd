@@ -21,7 +21,7 @@ be helpful below.
 
 ### Set Up
 
-```{r}
+```{r message=FALSE, warning=FALSE}
 library(tidyverse)
 library(datasets)
 library(caret)
