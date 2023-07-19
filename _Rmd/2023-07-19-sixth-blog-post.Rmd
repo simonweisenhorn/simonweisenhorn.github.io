@@ -1,0 +1,89 @@
+---
+title: "Most Interesting Machine Learning Method"
+author: "Simon Weisenhorn"
+date: "2023-07-19"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+I gained a lot of very helpful knowledge following the exploration we had with 
+machine learning in this course. The machine learning method that I found most 
+interesting was boosted trees. A boosted tree is a ensemble based model that 
+treats the errors created by previous decision trees. By considering the errors 
+of trees in previous rounds, the boosted tree model forms new trees sequentially 
+where each tree is dependent on the previous tree. This adjustment accounts for 
+overfitting which is one of the major drawbacks of regular decision trees. These 
+kinds of models are also useful for non-linear data, which make them great for 
+real world applications. Let’s explore a situation where a boosting tree might 
+be helpful below.
+
+### Set Up
+
+```{r}
+library(tidyverse)
+library(datasets)
+library(caret)
+#loading the necessary libraries for the code below
+
+Titanic <- data.frame(Titanic) #converting Titanic data to data frame
+Titanic <- uncount(Titanic, weights=Freq) 
+#duplicating rows based on weighted variable (Freq)
+
+set.seed(558) #setting seed for reproducibility 
+
+trainIndex <- createDataPartition(Titanic$Survived, p = 0.75, 
+                                  list = FALSE)
+#Creating indexes for training data 
+
+TitanicTrain <- Titanic[trainIndex, ] #Creating training dataset
+TitanicTest <- Titanic[-trainIndex, ] #Creating testing dataset
+```
+
+In the chunk above, I loaded in the data and partitioned it into a 75/25 
+training testing split. The data consists of information about the Titanic 
+passengers, such as their class, age, and gender, as well as whether they 
+survived the wreck or not. The analysis below will utilize the variables in a
+boosted tree model to predict whether a passenger survived.
+
+### Boosted Tree
+
+```{r message=FALSE}
+library(gbm) #Need this library to run the training function
+
+allTuningParameters <- expand.grid(n.trees=c(25,50,100,150,200), interaction.depth=c(1,2,3,4), shrinkage=0.1, n.minobsinnode = 10)
+#Creating dataframe for the tuneGrid arguement using expand.grid
+
+boostTreeFit <- train(Survived ~ ., data = TitanicTrain,
+                      method = "gbm",
+                      preProcess = c("center", "scale"),
+                      trControl = trainControl(method = "repeatedcv", 
+                                               number = 5, repeats=3),
+                      tuneGrid=allTuningParameters,
+                      verbose=FALSE)
+#Fitting the boosted tree model
+
+boostTreeFit
+#viewing the resulting model
+```
+
+The chunk above was used to fit the boosted tree model, which uses 5 fold
+repeated cross validation.
+
+```{r}
+confusionMatrix(data = TitanicTest$Survived, 
+                reference = predict(boostTreeFit, newdata = TitanicTest))
+#checking how well the model does on the test set using the confusionMatrix 
+#function
+```
+
+Finally, in the last chunk, I used the confusionMatrix function to check how 
+well the model did on the test set. The accuracy was 77.78% so not too bad 
+overall, but it could certainly improve. The best way to explore further 
+improvement would be to fit different ensemble models or adding additional
+tuning parameters.
+
+Overall, the boosted tree method is a very interesting machine learning method
+and I look forward to exploring where I can utilize methods like this one in
+future projects!
