@@ -1,0 +1,43 @@
+---
+title: "Final Reflections of the Course"
+author: "Simon Weisenhorn"
+date: "2023-07-26"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+My current thoughts about utilizing the R programming language for data science 
+are very positive. I find that the open sourceability and functionality of R 
+allow for the applications of it to be limitless at times and check all of the 
+boxes for the needs of a data scientist. However, when researching into job 
+prospects, it appears that the desire to program in python is higher than R, 
+which makes me want to consider looking into others languages to help with 
+future marketability. That being said, I certainly will never stop using R for 
+the rest of my professional career because I find it to be far too powerful to 
+not take advantage of it. The ability to run models and make fascinating 
+visualizations will always be great tools in my toolbox as I progress in any 
+future job and I look forward to impressing my peers and superiors with the 
+skills I have gained in this course.  
+  
+There are certainly a few things I plan to do differently in practice now that 
+I have taken this course. For one, I will explore the uses of all of the 
+statistical learning models we learned, and more, as I previously only knew how 
+to use linear models. I also plan on utilizing more visualizations to not only 
+allow myself to better understand relationships and patterns, but also for my 
+peers so that I can better communicate findings. Finally, I hope to use github 
+far more as a place for storing, displaying, and collaborating on all future 
+projects.  
+  
+I recently signed a job offer for a biostatistician position so I am very 
+excited to further explore that field and apply what I have learned in this 
+class to my new job. My future manager has expressed the company’s interest in 
+having employees complete exploratory/data science side projects in R so I do 
+not think I could have picked a better course to prepare me for those tasks and 
+I think deeper knowledge of R will be critical as it seems like the 
+pharmaceutical and regulatory industries may be shifting away from SAS over the 
+next several years. Regardless of what happens, I know that I will be prepared 
+and could easily adapt to industry shifts thanks to my efforts in this class and 
+in the statistics masters program as a whole.  
+  
